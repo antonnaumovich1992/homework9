@@ -5,13 +5,13 @@ let cropData = {
         x: 0,
         y: 0,
     },
-    canvas = document.getElementById('imagePreview'),
+    canvas = document.getElementById('preview'),
     cropCanvas = document.createElement('canvas'),
     mode = null,
     changeMade = false,
     frameRequest;
 
-document.forms.fileChooser.elements.file.addEventListener('change', function () {
+document.forms.fileAdd.elements.file.addEventListener('change', function () {
     this.blur();
     let file = this.files[0];
     if (file) {
