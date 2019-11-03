@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>crop</title>
+    <script src="app.js" defer></script>
+
+</head>
+
+<body style="text-align: center;">
+    <form name="fileChooser" id="fileChooser">
+        <input type="file" id="file" name="file">
+    </form>
+
+    <form name="saveForm" id="saveForm">
+        <label for="fileName">Имя кадрированного изображения</label>
+        <input id="fileName" name="fileName" required>
+        <button>Сохранить</button>
+    </form>
+    <form name="instrution">
+        <p>Размер окружности регулируется перетягиванием за левую/правую крайние точки окружности</p>
+    </form>
+
+    <canvas id="imagePreview"></canvas>
+
+</body>
+
+</html>
